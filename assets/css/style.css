@@ -1,0 +1,11 @@
+.container-web{
+    height: 100vh;
+}
+
+header{
+    height: 7vh;
+}
+
+main{
+    height: calc(100vh - 7vh);
+}
