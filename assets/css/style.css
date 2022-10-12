@@ -2,10 +2,31 @@
     height: 100vh;
 }
 
+/* HEADER */
 header{
     height: 7vh;
 }
 
+/* NAVBAR */
+.input-group-text{
+    background-color: white;
+}
+
 main{
     height: calc(100vh - 7vh);
+}
+
+
+/* SIDEBAR */
+.sidebar{
+    height: calc(100vh - 7vh);
+}
+
+.bg-sidebar{
+    background-color: rgba(19, 42, 64, 1);
+}
+
+/* MAIN */
+.blu-main{
+    background-color: rgba(26, 115, 232, 1);
 }
