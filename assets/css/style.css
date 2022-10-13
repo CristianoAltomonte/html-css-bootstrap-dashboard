@@ -1,32 +1,25 @@
-.container-web{
+.container-web-app{
     height: 100vh;
 }
 
-/* HEADER */
 header{
-    height: 7vh;
-}
-
-/* NAVBAR */
-.input-group-text{
-    background-color: white;
+    height: 70px;
 }
 
 main{
-    height: calc(100vh - 7vh);
+    height: calc(100% - 70px );
 }
 
-
-/* SIDEBAR */
-.sidebar{
-    height: calc(100vh - 7vh);
+#side{
+    background-image: url('../img/sidebar-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
-
 .bg-sidebar{
-    background-color: rgba(19, 42, 64, 1);
+    background-color: rgba(20, 42, 64, 1);
 }
 
-/* MAIN */
-.blu-main{
+.bg-lightblu{
     background-color: rgba(26, 115, 232, 1);
 }
