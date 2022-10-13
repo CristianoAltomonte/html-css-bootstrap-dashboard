@@ -36,3 +36,7 @@ main{
     height: 100%;
     overflow-y: auto;
 }
+
+.offcanvas.offcanvas-end{
+    width: 70%;
+}
