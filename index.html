@@ -29,7 +29,7 @@
                             <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel " aria-label="Username" aria-describedby="basic-addon1">
                         </div>
                     </div>
-                    <div class="col-2 d-flex justify-content-around align-items-center">
+                    <div class="col-2 d-flex justify-content-around">
                         <i class="fa-solid fa-list d-none d-md-block"></i>
                         <i class="fa-solid fa-circle-question d-none d-md-block d-md-block"></i>
                         <i class="fa-solid fa-ellipsis-vertical d-none d-md-block"></i>
@@ -62,13 +62,13 @@
                 <div class="row h-100">
                     <!-- SIDEBAR -->
                     <div class="col-2 bg-sidebar text-white d-flex flex-column justify-content-between py-3" id="side">
-                        <div class="d-flex flex-column">
-                            <i class="fa-solid fa-house"> <span class="d-none d-lg-block">Home</span> </i>
-                            <i class="fa-solid fa-chart-simple mt-3"> <span class="d-none d-lg-block">Stats</span></i>
-                            <i class="fa-solid fa-signal mt-3"><span class="d-none d-lg-block">Signals</span></i>
+                        <div class="d-flex flex-column text-center">
+                            <i class="fa-solid fa-house align-middle"> <span class="d-none d-lg-inline">Home</span> </i>
+                            <i class="fa-solid fa-chart-simple mt-3"> <span class="d-none d-lg-inline">Stats</span></i>
+                            <i class="fa-solid fa-signal mt-3"><span class="d-none d-lg-inline"> Signals</span></i>
                         </div>
-                        <div>
-                            <i class="fa-solid fa-gear "><span class="d-none d-lg-block">Signals</span></i>
+                        <div class="text-center">
+                            <i class="fa-solid fa-gear "><span class="d-none d-lg-inline"> Admin</span></i>
                         </div>
                     </div>
 
@@ -132,59 +132,81 @@
                                             <thead>
                                               <tr>
                                                 <th scope="col">Nome</th>
+                                                <th scope="col" class="date d-none d-md-table-cell text-center">Data inizio</th>
+                                                <th scope="col" class="date d-none d-md-table-cell text-center">Roi</th>
                                                 <th scope="col">Stato</th>
                                                 <th scope="col">Azioni</th>
-                                                <th scope="col" class="d-none">Handle</th>
                                               </tr>
                                             </thead>
                                             <tbody>
                                               <tr>
                                                 <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 75</td>
-                                                <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
-                                                <td></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
-                                                <td class="d-none">@mdo</td>
+                                                <td class="d-none d-md-block p-3 text-center">15 Febbraio 2021</td>
+                                                <td class="date d-none d-md-table-cell text-center">20%</td>
+                                                <td><button type="button" class="btn btn-success btn text-center-sm">Done</button></td>
+                                                <td></i><button type="button" class="btn btn-outline-secondary btn-sm mx-1" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
                                               </tr>
                                               <tr>
                                                 <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 76</td>
-                                                <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
-                                                <td></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
-                                                <td class="d-none">@fat</td>
+                                                <td class="d-none d-md-block p-3 text-center">16 Febbraio 2021</td>
+                                                <td class="date d-none d-md-table-cell text-center">20%</td>
+                                                <td><button type="button" class="btn btn-success btn-sm text-center">Done</button></td>
+                                                <td></i><button type="button" class="btn btn-outline-secondary btn-sm mx-1" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
+
                                               </tr>
                                               <tr>
                                                 <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 77</td>
-                                                <td><button type="button" class="btn btn-warning btn-sm">Process</button></td>
-                                                <td></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
-                                                <td class="d-none">@fat</td>
+                                                <td class="d-none d-md-block p-3 text-center ">17 Febbraio 2021</td>
+                                                <td class="date d-none d-md-table-cell text-center">20%</td>
+
+                                                <td><button type="button" class="btn btn-warning btn-sm text-center">Process</button></td>
+                                                <td></i><button type="button" class="btn btn-outline-secondary btn-sm mx-1" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
+
                                               </tr>
                                               <tr>
                                                 <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 78</td>
-                                                <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
-                                                <td></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
-                                                <td class="d-none">@mdo</td>
+                                                <td class="d-none d-md-block p-3 text-center">18 Febbraio 2021</td>
+                                                <td class="date d-none d-md-table-cell text-center">20%</td>
+
+                                                <td><button type="button" class="btn btn-success btn-sm text-center">Done</button></td>
+                                                <td></i><button type="button" class="btn btn-outline-secondary btn-sm mx-1" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
+
                                               </tr>
                                               <tr>
                                                 <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 79</td>
-                                                <td><button type="button" class="btn btn-danger btn-sm">Failed</button></td>
-                                                <td></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
-                                                <td class="d-none">@fat</td>
+                                                <td class="d-none d-md-block p-3 text-center">19 Febbraio 2021</td>
+                                                <td class="date d-none d-md-table-cell text-center">20%</td>
+
+                                                <td><button type="button" class="btn btn-danger btn-sm text-center">Failed</button></td>
+                                                <td></i><button type="button" class="btn btn-outline-secondary btn-sm mx-1" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
+
                                               </tr>
                                               <tr>
                                                 <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 80</td>
-                                                <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
-                                                <td></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
-                                                <td class="d-none">@fat</td>
+                                                <td class="d-none d-md-block p-3 text-center">20 Febbraio 2021</td>
+                                                <td class="date d-none d-md-table-cell text-center">20%</td>
+
+                                                <td><button type="button" class="btn btn-success btn-sm text-center">Done</button></td>
+                                                <td></i><button type="button" class="btn btn-outline-secondary btn-sm mx-1" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
+
                                               </tr>
                                               <tr>
                                                 <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 81</td>
-                                                <td><button type="button" class="btn btn-danger btn-sm">Failed</button></td>
-                                                <td></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
-                                                <td class="d-none">@fat</td>
+                                                <td class="d-none d-md-block p-3 text-center">21 Febbraio 2021</td>
+                                                <td class="date d-none d-md-table-cell text-center">20%</td>
+
+                                                <td><button type="button" class="btn btn-danger btn-sm text-center">Failed</button></td>
+                                                <td></i><button type="button" class="btn btn-outline-secondary btn-sm mx-1" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
+
                                               </tr>
                                               <tr>
                                                 <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 81</td>
-                                                <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
-                                                <td></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
-                                                <td class="d-none">@fat</td>
+                                                <td class="d-none d-md-block p-3 text-center">22 Febbraio 2021</td>
+                                                <td class="date d-none d-md-table-cell text-center">20%</td>
+
+                                                <td><button type="button" class="btn btn-success btn-sm text-center">Done</button></td>
+                                                <td></i><button type="button" class="btn btn-outline-secondary btn-sm mx-1" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
+
                                               </tr>
                                             </tbody>
                                         </table>
@@ -201,7 +223,7 @@
                                                 </button>
                                               </h2>
                                               <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                                <div class="accordion-body"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, vero.</p></div>
                                               </div>
                                             </div>
                                             <div class="accordion-item">
@@ -221,7 +243,7 @@
                                                 </button>
                                               </h2>
                                               <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                                <div class="accordion-body"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, vero sint consequatur ipsum officiis maxime delectus eius iure expedita eveniet aspernatur sed hic nulla eligendi ut? Numquam quia quae rerum.</p></div>
                                               </div>
                                             </div>
                                         </div>
