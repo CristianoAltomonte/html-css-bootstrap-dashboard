@@ -23,3 +23,16 @@ main{
 .bg-lightblu{
     background-color: rgba(26, 115, 232, 1);
 }
+
+.bg-badges{
+    background-color: rgba(21, 92, 186, 1);
+}
+
+.jt-avatar {
+    max-width: 25px;
+}
+
+.main-cont{
+    height: 100%;
+    overflow-y: auto;
+}

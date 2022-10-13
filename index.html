@@ -26,13 +26,13 @@
                     <div class="col-8">
                         <div class="input-group ">
                             <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
-                            <input type="text" class="form-control" placeholder="Ricerca " aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel " aria-label="Username" aria-describedby="basic-addon1">
                         </div>
                     </div>
                     <div class="col-2 d-flex justify-content-around align-items-center">
-                        <i class="fa-solid fa-list"></i>
-                        <i class="fa-solid fa-circle-question"></i>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <i class="fa-solid fa-list d-none d-md-block"></i>
+                        <i class="fa-solid fa-circle-question d-none d-md-block d-md-block"></i>
+                        <i class="fa-solid fa-ellipsis-vertical d-none d-md-block"></i>
 
                         <!-- Campanella Dropdown -->
 
@@ -61,23 +61,117 @@
             <div class="container-fluid h-100">
                 <div class="row h-100">
                     <!-- SIDEBAR -->
-                    <div class="col-2 bg-sidebar" id="side">
-
+                    <div class="col-2 bg-sidebar text-white d-flex flex-column justify-content-between py-3" id="side">
+                        <div class="d-flex flex-column">
+                            <i class="fa-solid fa-house"> <span class="d-none d-lg-block">Home</span> </i>
+                            <i class="fa-solid fa-chart-simple mt-3"> <span class="d-none d-lg-block">Stats</span></i>
+                            <i class="fa-solid fa-signal mt-3"><span class="d-none d-lg-block">Signals</span></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
                     </div>
 
                     <!-- CONTENT -->
-                    <div class="col-10 px-0">
+                    <div class="col-10 px-0 main-cont">
                         <!-- Principal Content -->
                         <div class="container-fluid text-white py-4 bg-lightblu">
                             <div class="row">
                                 <div class="col-lg-8">
-                                    Boolean
+                                    <span>Boolean <span class="badge rounded-pill bg-badges">Piano Blaze</span></span>
+                                    <span class="badge rounded-pill bg-badges">3 app</span>
+                                    <span>>></span>
+                                    <span class="badge rounded-pill bg-badges">+</span>
                                 </div>
                                 <div class="col-lg-4">
-                                    Studenti online negli ultimi 30 minuti
+                                    <span class="fs-5 fw-lighter">Studenti online negli ultimi 30 minuti</span> 
+                                    <h5>125</h5>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- PROSSIME CLASSI -->
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="card my-3">
+                                        <div class="card-header">
+                                          Prossime Classi
+                                        </div>
+                                        <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">Nome</th>
+                                                <th scope="col">Stato</th>
+                                                <th scope="col">Azioni</th>
+                                                <th scope="col" class="d-none">Handle</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 75</td>
+                                                <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                                                <td></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
+                                                <td class="d-none">@mdo</td>
+                                              </tr>
+                                              <tr>
+                                                <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 76</td>
+                                                <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                                                <td></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
+                                                <td class="d-none">@fat</td>
+                                              </tr>
+                                              <tr>
+                                                <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 77</td>
+                                                <td><button type="button" class="btn btn-warning btn-sm">Process</button></td>
+                                                <td></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
+                                                <td class="d-none">@fat</td>
+                                              </tr>
+                                              <tr>
+                                                <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 78</td>
+                                                <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                                                <td></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
+                                                <td class="d-none">@mdo</td>
+                                              </tr>
+                                              <tr>
+                                                <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 79</td>
+                                                <td><button type="button" class="btn btn-danger btn-sm">Failed</button></td>
+                                                <td></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
+                                                <td class="d-none">@fat</td>
+                                              </tr>
+                                              <tr>
+                                                <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 80</td>
+                                                <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                                                <td></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
+                                                <td class="d-none">@fat</td>
+                                              </tr>
+                                              <tr>
+                                                <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 81</td>
+                                                <td><button type="button" class="btn btn-danger btn-sm">Failed</button></td>
+                                                <td></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
+                                                <td class="d-none">@fat</td>
+                                              </tr>
+                                              <tr>
+                                                <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 81</td>
+                                                <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                                                <td></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
+                                                <td class="d-none">@fat</td>
+                                              </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        
+                            
+
                     </div>
                 </div>
             </div>
