@@ -14,44 +14,44 @@
 
     <!-- CONTENITORE WEB-APP -->
     <div class="container-web-app">
-
-        <!-- HEADER -->
+      
+      <!-- HEADER -->
         <header class="d-flex align-items-center">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-2">
-                        <img src="./assets/img/mobile-logo.png" class="d-lg-none d-inline-block img-fluid" alt="logo mobile">
-                        <img src="./assets/img/logo.svg" class="d-none d-lg-inline-block img-fluid" alt="logo">
+          <div class="container-fluid">
+              <div class="row align-items-center">
+                  <div class="col-2">
+                  <img src="./assets/img/mobile-logo.png" class="d-lg-none d-inline-block img-fluid" alt="logo mobile">
+                  <img src="./assets/img/logo.svg" class="d-none d-lg-inline-block img-fluid" alt="logo">
+                  </div>
+                  <div class="col-8">
+                    <div class="input-group ">
+                    <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel " aria-label="Username" aria-describedby="basic-addon1">
                     </div>
-                    <div class="col-8">
-                        <div class="input-group ">
-                            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
-                            <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel " aria-label="Username" aria-describedby="basic-addon1">
-                        </div>
-                    </div>
-                    <div class="col-2 d-flex justify-content-around">
-                        <i class="fa-solid fa-list d-none d-md-block"></i>
-                        <i class="fa-solid fa-circle-question d-none d-md-block d-md-block"></i>
-                        <i class="fa-solid fa-ellipsis-vertical d-none d-md-block"></i>
+                  </div>
+                  <div class="col-2 d-flex justify-content-around">
+                      <i class="fa-solid fa-list d-none d-md-block"></i>
+                      <i class="fa-solid fa-circle-question d-none d-md-block d-md-block"></i>
+                      <i class="fa-solid fa-ellipsis-vertical d-none d-md-block"></i>
 
-                        <!-- Campanella Dropdown -->
+                      <!-- Campanella Dropdown -->
 
-                        <div class="btn-group">
-                            <span type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-bell text-warning"></i>
-                            </span>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                              <li><button class="dropdown-item" type="button">Profilo</button></li>
-                              <li><button class="dropdown-item" type="button">Fatturazione</button></li>
-                              <li><button class="dropdown-item" type="button">Logout</button></li>
-                            </ul>
-                          </div>
+                      <div class="btn-group">
+                          <span type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell text-warning"></i>
+                          </span>
+                          <ul class="dropdown-menu dropdown-menu-end">
+                            <li><button class="dropdown-item" type="button">Profilo</button></li>
+                            <li><button class="dropdown-item" type="button">Fatturazione</button></li>
+                            <li><button class="dropdown-item" type="button">Logout</button></li>
+                          </ul>
+                      </div>
 
-                        <!-- / Campanella Dropdown -->
+                      <!-- / Campanella Dropdown -->
 
-                    </div>
-                </div>
-            </div>
+                  </div>
+              </div>
+          </div>
 
         </header>
 
@@ -61,8 +61,8 @@
             <div class="container-fluid h-100">
                 <div class="row h-100">
                     <!-- SIDEBAR -->
-                    <div class="col-2 bg-sidebar text-white d-flex flex-column justify-content-between py-3" id="side">
-                        <div class="d-flex flex-column text-center">
+                    <div class="col-2 bg-sidebar text-white d-flex flex-column justify-content-between py-3 align-items-center" id="side">
+                        <div class="d-flex flex-column">
                             <i class="fa-solid fa-house align-middle"> <span class="d-none d-lg-inline">Home</span> </i>
                             <i class="fa-solid fa-chart-simple mt-3"> <span class="d-none d-lg-inline">Stats</span></i>
                             <i class="fa-solid fa-signal mt-3"><span class="d-none d-lg-inline"> Signals</span></i>
@@ -109,26 +109,54 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                                 </div>
                                                 <div class="offcanvas-body">
-                                                    <form>
-                                                        <div class="mb-3">
-                                                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                                                        </div>
-                                                        <div class="mb-3">
-                                                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                                                            <input type="password" class="form-control" id="exampleInputPassword1">
-                                                        </div>
-                                                        <div class="mb-3 form-check">
-                                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                                        </div>
-                                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                                    </form>
+                                                  <form class="row g-3">
+                                                    <div class="col-md-6">
+                                                      <label for="inputEmail4" class="form-label">Email</label>
+                                                      <input type="email" class="form-control" id="inputEmail4">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                      <label for="inputPassword4" class="form-label">Password</label>
+                                                      <input type="password" class="form-control" id="inputPassword4">
+                                                    </div>
+                                                    <div class="col-12">
+                                                      <label for="inputAddress" class="form-label">Address</label>
+                                                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                                    </div>
+                                                    <div class="col-12">
+                                                      <label for="inputAddress2" class="form-label">Address 2</label>
+                                                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                      <label for="inputCity" class="form-label">City</label>
+                                                      <input type="text" class="form-control" id="inputCity">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                      <label for="inputState" class="form-label">State</label>
+                                                      <select id="inputState" class="form-select">
+                                                        <option selected>Choose...</option>
+                                                        <option>...</option>
+                                                      </select>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                      <label for="inputZip" class="form-label">Zip</label>
+                                                      <input type="text" class="form-control" id="inputZip">
+                                                    </div>
+                                                    <div class="col-12">
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                        <label class="form-check-label" for="gridCheck">
+                                                          Check me out
+                                                        </label>
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                      <button type="submit" class="btn btn-primary">Sign in</button>
+                                                    </div>
+                                                  </form>
                                                 </div>
                                             </div>
                                         </div>
-                                        <table class="table">
+                                        <table class="table align-middle">
                                             <thead>
                                               <tr>
                                                 <th scope="col">Nome</th>
@@ -143,14 +171,14 @@
                                                 <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 75</td>
                                                 <td class="d-none d-md-block p-3 text-center">15 Febbraio 2021</td>
                                                 <td class="date d-none d-md-table-cell text-center">20%</td>
-                                                <td><button type="button" class="btn btn-success btn text-center-sm">Done</button></td>
+                                                <td><span class="badge text-bg-success">Done</span></td>
                                                 <td></i><button type="button" class="btn btn-outline-secondary btn-sm mx-1" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
                                               </tr>
                                               <tr>
                                                 <td><img class="jt-avatar me-1" src="./assets/img/class-avatar.jpg" alt="class avatar">Classe 76</td>
                                                 <td class="d-none d-md-block p-3 text-center">16 Febbraio 2021</td>
                                                 <td class="date d-none d-md-table-cell text-center">20%</td>
-                                                <td><button type="button" class="btn btn-success btn-sm text-center">Done</button></td>
+                                                <td><span class="badge text-bg-success">Done</span></td>
                                                 <td></i><button type="button" class="btn btn-outline-secondary btn-sm mx-1" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
 
                                               </tr>
@@ -159,7 +187,7 @@
                                                 <td class="d-none d-md-block p-3 text-center ">17 Febbraio 2021</td>
                                                 <td class="date d-none d-md-table-cell text-center">20%</td>
 
-                                                <td><button type="button" class="btn btn-warning btn-sm text-center">Process</button></td>
+                                                <td><span class="badge text-bg-warning">Process</span></td>
                                                 <td></i><button type="button" class="btn btn-outline-secondary btn-sm mx-1" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
 
                                               </tr>
@@ -168,7 +196,7 @@
                                                 <td class="d-none d-md-block p-3 text-center">18 Febbraio 2021</td>
                                                 <td class="date d-none d-md-table-cell text-center">20%</td>
 
-                                                <td><button type="button" class="btn btn-success btn-sm text-center">Done</button></td>
+                                                <td><span class="badge text-bg-success">Done</span></td>
                                                 <td></i><button type="button" class="btn btn-outline-secondary btn-sm mx-1" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
 
                                               </tr>
@@ -177,7 +205,7 @@
                                                 <td class="d-none d-md-block p-3 text-center">19 Febbraio 2021</td>
                                                 <td class="date d-none d-md-table-cell text-center">20%</td>
 
-                                                <td><button type="button" class="btn btn-danger btn-sm text-center">Failed</button></td>
+                                                <td><span class="badge text-bg-danger">Failed</span></td>
                                                 <td></i><button type="button" class="btn btn-outline-secondary btn-sm mx-1" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
 
                                               </tr>
@@ -186,7 +214,7 @@
                                                 <td class="d-none d-md-block p-3 text-center">20 Febbraio 2021</td>
                                                 <td class="date d-none d-md-table-cell text-center">20%</td>
 
-                                                <td><button type="button" class="btn btn-success btn-sm text-center">Done</button></td>
+                                                <td><span class="badge text-bg-success">Done</span></td>
                                                 <td></i><button type="button" class="btn btn-outline-secondary btn-sm mx-1" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
 
                                               </tr>
@@ -195,7 +223,7 @@
                                                 <td class="d-none d-md-block p-3 text-center">21 Febbraio 2021</td>
                                                 <td class="date d-none d-md-table-cell text-center">20%</td>
 
-                                                <td><button type="button" class="btn btn-danger btn-sm text-center">Failed</button></td>
+                                                <td><span class="badge text-bg-danger">Failed</span></td>
                                                 <td></i><button type="button" class="btn btn-outline-secondary btn-sm mx-1" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
 
                                               </tr>
@@ -204,7 +232,7 @@
                                                 <td class="d-none d-md-block p-3 text-center">22 Febbraio 2021</td>
                                                 <td class="date d-none d-md-table-cell text-center">20%</td>
 
-                                                <td><button type="button" class="btn btn-success btn-sm text-center">Done</button></td>
+                                                <td><span class="badge text-bg-success">Done</span></td>
                                                 <td></i><button type="button" class="btn btn-outline-secondary btn-sm mx-1" disabled><i class="fa-solid fa-pen"></i><button type="button" class="btn btn-outline-secondary btn-sm" disabled><i class="fa-solid fa-trash"></i></i></td>
 
                                               </tr>
